@@ -5,46 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <style>
+        * { 
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         header {
             text-align: center;
         }
 
-        p.text1 {
-            margin-bottom: 0%;
+        header nav {
+            margin: 30px 0;
         }
 
-        p.text2 {
-            margin-top: 0%;
+        header nav a{
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0px 20px;
+            color: black;
+            text-transform: uppercase;
         }
 
-        ul.ulSUM {
-            padding-left: 224px;
+        header h1, h4, div {
+           margin-bottom: 15px;
         }
 
-        h2 {
-            padding-left: 160px;
+        section > div > h3 {
+            text-transform: uppercase;
+            margin: 0 0 15px 0;
         }
 
-        h3 {
-            padding-left: 207px;
+        div.sub {
+            margin-left: 40px;
         }
 
         ul {
-            padding-left: 255px;
+            margin-left: 25px;
         }
-        
+
+        section {
+            width: 800px;
+            padding: 20px;
+            margin: 0px auto;
+        }
+
     </style>
 </head>
 <body>
     <header>
-    <h1 class>Jane Doe</h1>
-    <p class="text1">1234 Main Street, Sometown, CA 93829</p>
-    <p class="text2">tel: 555-555-1212, email:jane@doe.com</p>
+        <img src="Patrick-star.jpg" alt="Patrick Star" height="100px">
+        <h1 class>Jane Doe</h1>
+        <p>1234 Main Street, Sometown, CA 93829</p>
+        <p>tel: 555-555-1212, email:jane@doe.com</p>
+    <nav>
+        <a href="semantic.html">🏡 home</a>
+        <a href="resume-s.html">🧙‍♂️ profile</a>
+        <a href="list.html">🤯 about</a>
+    </nav>
     </header>
 
     <section>
         <div>
-            <h2>SUMMARY OF QUALIFICATIONS</h3>
+            <h3>SUMMARY OF QUALIFICATIONS</h3>
             <ul class="ulSUM">
                 <li>Dedicated and discipline...</li>
                 <li>Highly skilled and excellent in communication...</li>
@@ -53,14 +80,17 @@
         </div>
 
         <div>
-            <h2>PROFESSIONAL EXPERIENCE</h3>
-            <h3>Operation Manager, A Gargantuan Company</h4>
-            <ul>
-                <li>Direct All...</li>
-                <li>Coordinate Work...</li>
-                <li>Generally in charge of everything...</li>
-            </ul>
+            <h3>PROFESSIONAL EXPERIENCE</h3>
+            <div class="sub">
+                <h4>Operation Manager, Super Awesome Company</h4>
+                <ul>
+                    <li>Direct All...</li>
+                    <li>Coordinate Work...</li>
+                    <li>Generally in charge of everything...</li>
+                </ul>
+            </div>
         </div>
     </section>
     
 </body>
+</html>
